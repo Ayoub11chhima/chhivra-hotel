@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hôtel Chhivra · Hôtel 5 étoiles d'affaires · Marrakech</title>
-  <meta name="description" content="Hôtel Chhivra — Work and Reset. Hôtel 5 étoiles d'affaires, Hivernage, Marrakech." />
+  <meta name="description" content="Hôtel Chhivra — Work & Reset : L'alliance parfaite entre travail et bien-être. Hôtel 5 étoiles d'affaires au cœur de l'Hivernage, Marrakech." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
+
+  <!-- Preloader -->
   <div id="preloader" class="preloader">
     <div class="preloader-inner">
       <div class="preloader-ornament"></div>
@@ -19,10 +21,14 @@
       <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
     </div>
   </div>
+
+  <!-- Header -->
   <header id="main-header" class="header">
     <div class="header-inner">
       <div class="header-left">
-        <button id="menu-toggle" class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
       <a href="#hero" class="header-logo" id="header-logo">
         <span class="logo-text">Chhivra</span>
@@ -33,23 +39,34 @@
       </div>
     </div>
   </header>
+
+  <!-- Nav Overlay -->
   <nav id="nav-overlay" class="nav-overlay">
     <div class="nav-overlay-inner">
-      <div class="nav-close-row"><button id="nav-close" class="nav-close">&times;</button></div>
+      <div class="nav-close-row">
+        <button id="nav-close" class="nav-close" aria-label="Fermer le menu">&times;</button>
+      </div>
       <ul class="nav-links">
         <li><a href="#hero" class="nav-link" data-nav>Accueil</a></li>
         <li><a href="#vision" class="nav-link" data-nav>Notre Vision</a></li>
-        <li><a href="#chambres" class="nav-link" data-nav>Chambres</a></li>
-        <li><a href="#mice" class="nav-link" data-nav>MICE</a></li>
+        <li><a href="#chambres" class="nav-link" data-nav>Chambres & Suites</a></li>
+        <li><a href="#mice" class="nav-link" data-nav>MICE & Événements</a></li>
         <li><a href="#gastronomie" class="nav-link" data-nav>Gastronomie</a></li>
         <li><a href="#bienetre" class="nav-link" data-nav>Bien-être</a></li>
         <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
       </ul>
-      <div class="nav-footer"><span>+212 524 000 000</span><span>contact@hotelchhivra.com</span></div>
+      <div class="nav-footer">
+        <span>+212 524 000 000</span>
+        <span>contact@hotelchhivra.com</span>
+      </div>
     </div>
   </nav>
+
+  <!-- Hero -->
   <section id="hero" class="hero">
-    <div class="hero-bg"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80" alt="Hôtel Chhivra" /></div>
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80" alt="Hôtel Chhivra Marrakech" />
+    </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-ornament"></div>
@@ -61,12 +78,18 @@
       <p class="hero-subtitle">Work & Reset</p>
       <p class="hero-desc">L'alliance parfaite entre travail et bien-être.<br>Travaillez intelligemment, dormez mieux.</p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn-primary">Réserver</a>
-        <a href="#mice" class="btn-outline">Devis Corporate</a>
+        <a href="#contact" class="btn-primary" id="btn-reserve">Réserver</a>
+        <a href="#mice" class="btn-outline" id="btn-devis">Devis Corporate</a>
       </div>
+      <div class="hero-ornament hero-ornament-bottom"></div>
     </div>
-    <a href="#vision" class="hero-scroll"><span>Découvrir</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="#vision" class="hero-scroll" id="hero-scroll-btn">
+      <span>Découvrir</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
   </section>
+
+  <!-- Notre Vision -->
   <section id="vision" class="section section-vision">
     <div class="container">
       <div class="section-header" data-animate>
@@ -77,51 +100,158 @@
       <div class="vision-grid" data-animate>
         <div class="vision-text">
           <p class="vision-lead">Un établissement combinant la rigueur d'un centre d'affaires international et la chaleur de l'hospitalité marocaine.</p>
-          <p>Au coeur du quartier de l'Hivernage à Marrakech, l'Hôtel Chhivra réinvente le concept du séjour professionnel.</p>
-          <p>A 10 minutes de l'Aéroport Marrakech-Ménara et à 5 minutes de la Gare TGV.</p>
+          <p>Au cœur du quartier de l'Hivernage à Marrakech, l'Hôtel Chhivra réinvente le concept du séjour professionnel. Chaque espace a été conçu pour maximiser votre productivité tout en offrant un cadre de détente exceptionnel.</p>
+          <p>À 10 minutes de l'Aéroport International Marrakech-Ménara et à 5 minutes de la Gare TGV, notre emplacement stratégique fait de Chhivra le point de rencontre idéal pour vos affaires au Maroc.</p>
           <div class="vision-stats">
-            <div class="stat"><span class="stat-number" data-count="150">0</span><span class="stat-label">Clés</span></div>
-            <div class="stat"><span class="stat-number" data-count="300">0</span><span class="stat-label">Capacité MICE</span></div>
-            <div class="stat"><span class="stat-number" data-count="8">0</span><span class="stat-label">Salles de Réunion</span></div>
-            <div class="stat"><span class="stat-icon">24/7</span><span class="stat-label">Business Center</span></div>
+            <div class="stat">
+              <span class="stat-number" data-count="150">0</span>
+              <span class="stat-label">Clés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="300">0</span>
+              <span class="stat-label">Capacité MICE</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="8">0</span>
+              <span class="stat-label">Salles de Réunion</span>
+            </div>
+            <div class="stat">
+              <span class="stat-icon">24/7</span>
+              <span class="stat-label">Business Center</span>
+            </div>
           </div>
         </div>
-        <div class="vision-image"><div class="vision-image-frame"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Lobby" loading="lazy" /></div></div>
+        <div class="vision-image">
+          <div class="vision-image-frame">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Lobby Hôtel Chhivra" loading="lazy" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Chambres & Suites -->
   <section id="chambres" class="section section-dark section-chambres">
     <div class="container">
       <div class="section-header" data-animate>
         <span class="section-tag">Hébergement · 150 Clés</span>
         <h2 class="section-title">Chambres & Suites</h2>
         <div class="section-divider"><span></span></div>
-        <p class="section-desc">Des espaces conçus pour la performance et le repos.</p>
+        <p class="section-desc">Des espaces conçus pour la performance et le repos, alliant technologie de pointe et confort absolu.</p>
       </div>
       <div class="rooms-showcase" data-animate>
-        <div class="room-card"><div class="room-card-image"><img src="https://images.unsplash.com/photo-1590490360182-c33d67d9b27d?auto=format&fit=crop&w=800&q=80" alt="Executive" loading="lazy" /><div class="room-card-overlay"><span class="room-card-price">Dès 2 500 MAD / nuit</span></div></div><div class="room-card-info"><h3>Chambre Executive</h3><p>Wi-Fi 6, bureau ergonomique, insonorisation totale.</p><ul class="room-features"><li>Wi-Fi 6</li><li>Bureau Ergonomique</li><li>Insonorisation</li></ul></div></div>
-        <div class="room-card"><div class="room-card-image"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Corporate" loading="lazy" /><div class="room-card-overlay"><span class="room-card-price">Dès 4 500 MAD / nuit</span></div></div><div class="room-card-info"><h3>Suite Corporate</h3><p>Salon privatif pour les réunions confidentielles.</p><ul class="room-features"><li>Salon Privatif</li><li>Réunions In-Suite</li><li>Minibar Premium</li></ul></div></div>
-        <div class="room-card"><div class="room-card-image"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Présidentielle" loading="lazy" /><div class="room-card-overlay"><span class="room-card-price">Dès 12 000 MAD / nuit</span></div></div><div class="room-card-info"><h3>Suite Présidentielle</h3><p>Vue panoramique sur l'Atlas, butler dédié.</p><ul class="room-features"><li>Vue Panoramique</li><li>Butler Dédié</li><li>Services Exclusifs</li></ul></div></div>
+        <div class="room-card" id="room-executive">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d67d9b27d?auto=format&fit=crop&w=800&q=80" alt="Chambre Executive" loading="lazy" />
+            <div class="room-card-overlay">
+              <span class="room-card-price">À partir de 2 500 MAD / nuit</span>
+            </div>
+          </div>
+          <div class="room-card-info">
+            <h3>Chambre Executive</h3>
+            <p>Wi-Fi 6 ultra-rapide, bureau ergonomique, insonorisation totale, écran 55" pour les visioconférences.</p>
+            <ul class="room-features">
+              <li>Wi-Fi 6</li>
+              <li>Bureau Ergonomique</li>
+              <li>Insonorisation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="room-card" id="room-corporate">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Suite Corporate" loading="lazy" />
+            <div class="room-card-overlay">
+              <span class="room-card-price">À partir de 4 500 MAD / nuit</span>
+            </div>
+          </div>
+          <div class="room-card-info">
+            <h3>Suite Corporate</h3>
+            <p>Salon privatif pour les réunions confidentielles, espace de travail séparé, minibar premium.</p>
+            <ul class="room-features">
+              <li>Salon Privatif</li>
+              <li>Réunions In-Suite</li>
+              <li>Minibar Premium</li>
+            </ul>
+          </div>
+        </div>
+        <div class="room-card" id="room-presidentielle">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Suite Présidentielle" loading="lazy" />
+            <div class="room-card-overlay">
+              <span class="room-card-price">À partir de 12 000 MAD / nuit</span>
+            </div>
+          </div>
+          <div class="room-card-info">
+            <h3>Suite Présidentielle</h3>
+            <p>Vue panoramique sur l'Atlas, butler dédié, services exclusifs, salle de réunion privée.</p>
+            <ul class="room-features">
+              <li>Vue Panoramique</li>
+              <li>Butler Dédié</li>
+              <li>Services Exclusifs</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <div class="parallax-divider"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80" alt="Business" loading="lazy" /><div class="parallax-overlay"></div><div class="parallax-content" data-animate><blockquote>"Work & Reset : L'excellence professionnelle rencontre l'art de vivre marocain"</blockquote><cite>— Hôtel Chhivra</cite></div></div>
+
+  <!-- Parallax Quote -->
+  <div class="parallax-divider" id="parallax-1">
+    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80" alt="Business meeting" loading="lazy" />
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content" data-animate>
+      <blockquote>"Work & Reset : Là où l'excellence professionnelle rencontre l'art de vivre marocain"</blockquote>
+      <cite>— Hôtel Chhivra, Marrakech</cite>
+    </div>
+  </div>
+
+  <!-- MICE & Événements -->
   <section id="mice" class="section section-mice">
     <div class="container">
       <div class="section-header" data-animate>
         <span class="section-tag">MICE & Événements</span>
         <h2 class="section-title">Centre de Conventions</h2>
         <div class="section-divider"><span></span></div>
-        <p class="section-desc">Infrastructure de pointe pour vos séminaires et conférences.</p>
+        <p class="section-desc">Une infrastructure de pointe pour vos séminaires, conférences et événements d'entreprise.</p>
       </div>
       <div class="mice-grid" data-animate>
-        <div class="mice-card mice-card-featured"><div class="mice-card-image"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80" alt="Convention" loading="lazy" /></div><div class="mice-card-content"><span class="mice-card-tag">Capacité : 300 personnes</span><h3>Centre de Conventions</h3><p>Technologie hybride, audiovisuel 4K, traduction simultanée, streaming live.</p><a href="#contact" class="btn-elegant">Demander un Devis</a></div></div>
-        <div class="mice-card"><div class="mice-card-image"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80" alt="Breakout" loading="lazy" /></div><div class="mice-card-content"><span class="mice-card-tag">8 salles modulables</span><h3>Breakout Rooms</h3><p>Salles de sous-commission modulables, écrans interactifs.</p></div></div>
-        <div class="mice-card"><div class="mice-card-image"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Business Center" loading="lazy" /></div><div class="mice-card-content"><span class="mice-card-tag">Ouvert 24h/24</span><h3>Business Center</h3><p>Coworking, impression, secrétariat, salles à la demande.</p></div></div>
+        <div class="mice-card mice-card-featured" id="mice-convention">
+          <div class="mice-card-image">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80" alt="Centre de Conventions" loading="lazy" />
+          </div>
+          <div class="mice-card-content">
+            <span class="mice-card-tag">Capacité : 300 personnes</span>
+            <h3>Centre de Conventions</h3>
+            <p>Technologie hybride de dernière génération — conférences en présentiel et en visioconférence simultanément. Équipement audiovisuel 4K, traduction simultanée, streaming live.</p>
+            <a href="#contact" class="btn-elegant">Demander un Devis</a>
+          </div>
+        </div>
+        <div class="mice-card" id="mice-breakout">
+          <div class="mice-card-image">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80" alt="Salles de sous-commission" loading="lazy" />
+          </div>
+          <div class="mice-card-content">
+            <span class="mice-card-tag">8 salles modulables</span>
+            <h3>Breakout Rooms</h3>
+            <p>Salles de sous-commission modulables, écrans interactifs, visioconférence intégrée.</p>
+          </div>
+        </div>
+        <div class="mice-card" id="mice-business">
+          <div class="mice-card-image">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Business Center" loading="lazy" />
+          </div>
+          <div class="mice-card-content">
+            <span class="mice-card-tag">Ouvert 24h/24 · 7j/7</span>
+            <h3>Business Center</h3>
+            <p>Espace de coworking, impression, secrétariat, et salles de réunion à la demande.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section id="gastronomie" class="section section-dark">
+
+  <!-- Gastronomie -->
+  <section id="gastronomie" class="section section-dark section-gastro">
     <div class="container">
       <div class="section-header" data-animate>
         <span class="section-tag">Gastronomie</span>
@@ -129,65 +259,225 @@
         <div class="section-divider"><span></span></div>
       </div>
       <div class="gastro-grid" data-animate>
-        <div class="gastro-card gastro-featured"><div class="gastro-card-image"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="La Bourse" loading="lazy" /></div><div class="gastro-card-content"><span class="gastro-tag">Restaurant</span><h3>La Bourse</h3><p>Business Lunchs raffinés en 45 minutes.</p><a href="#contact" class="btn-elegant">Réserver une Table</a></div></div>
-        <div class="gastro-card"><div class="gastro-card-image"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80" alt="Lounge" loading="lazy" /></div><div class="gastro-card-content"><span class="gastro-tag">VIP</span><h3>Executive Lounge</h3><p>Espace exclusif pour vos rendez-vous informels.</p></div></div>
-        <div class="gastro-card"><div class="gastro-card-image"><img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=800&q=80" alt="Lobby Bar" loading="lazy" /></div><div class="gastro-card-content"><span class="gastro-tag">Networking</span><h3>Lobby Bar</h3><p>Cocktails et networking après les réunions.</p></div></div>
+        <div class="gastro-card gastro-featured" id="gastro-bourse">
+          <div class="gastro-card-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Restaurant La Bourse" loading="lazy" />
+          </div>
+          <div class="gastro-card-content">
+            <span class="gastro-tag">Restaurant Gastronomique</span>
+            <h3>La Bourse</h3>
+            <p>Business Lunchs raffinés en 45 minutes. Cuisine marocaine et internationale, menus express conçus pour les professionnels exigeants.</p>
+            <a href="#contact" class="btn-elegant">Réserver une Table</a>
+          </div>
+        </div>
+        <div class="gastro-card" id="gastro-lounge">
+          <div class="gastro-card-image">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80" alt="Executive Lounge" loading="lazy" />
+          </div>
+          <div class="gastro-card-content">
+            <span class="gastro-tag">Espace VIP</span>
+            <h3>Executive Lounge</h3>
+            <p>Un espace exclusif pour vos rendez-vous informels, avec service premium et confidentialité garantie.</p>
+          </div>
+        </div>
+        <div class="gastro-card" id="gastro-bar">
+          <div class="gastro-card-image">
+            <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=800&q=80" alt="Lobby Bar" loading="lazy" />
+          </div>
+          <div class="gastro-card-content">
+            <span class="gastro-tag">Networking</span>
+            <h3>Lobby Bar</h3>
+            <p>Cocktails signatures et ambiance feutrée pour vos moments de networking après les réunions.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section id="bienetre" class="section">
+
+  <!-- Bien-être -->
+  <section id="bienetre" class="section section-bienetre">
     <div class="container">
       <div class="spa-layout" data-animate>
-        <div class="spa-image"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Spa" loading="lazy" /></div>
+        <div class="spa-image">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Spa Express Chhivra" loading="lazy" />
+        </div>
         <div class="spa-content">
           <span class="section-tag">Bien-être & Fitness</span>
           <h2 class="section-title">Le Reset</h2>
           <div class="section-divider section-divider-left"><span></span></div>
-          <p class="spa-lead">Rechargez vos batteries entre deux réunions.</p>
+          <p class="spa-lead">Rechargez vos batteries entre deux réunions. Des soins express conçus pour les emplois du temps chargés.</p>
           <div class="spa-services">
-            <div class="spa-service"><div class="spa-service-icon">✦</div><div><h4>Spa Express</h4><p>Massages 30 min, hammam traditionnel</p></div></div>
-            <div class="spa-service"><div class="spa-service-icon">✦</div><div><h4>Fitness 24/7</h4><p>Technogym, coaching, cours collectifs</p></div></div>
-            <div class="spa-service"><div class="spa-service-icon">✦</div><div><h4>Piscine</h4><p>Piscine chauffée, vue sur l'Atlas</p></div></div>
+            <div class="spa-service">
+              <div class="spa-service-icon">✦</div>
+              <div>
+                <h4>Spa Express</h4>
+                <p>Massages de 30 min, soins du visage express, hammam traditionnel</p>
+              </div>
+            </div>
+            <div class="spa-service">
+              <div class="spa-service-icon">✦</div>
+              <div>
+                <h4>Fitness Center 24/7</h4>
+                <p>Équipements Technogym, coaching personnel, cours collectifs</p>
+              </div>
+            </div>
+            <div class="spa-service">
+              <div class="spa-service-icon">✦</div>
+              <div>
+                <h4>Piscine & Solarium</h4>
+                <p>Piscine chauffée, espace détente avec vue sur l'Atlas</p>
+              </div>
+            </div>
           </div>
-          <a href="#contact" class="btn-elegant">Réserver un Soin</a>
+          <a href="#contact" class="btn-elegant" id="btn-book-spa">Réserver un Soin</a>
         </div>
       </div>
     </div>
   </section>
-  <section id="contact" class="section section-dark">
+
+  <!-- Contact -->
+  <section id="contact" class="section section-dark section-contact">
     <div class="container">
       <div class="contact-layout" data-animate>
         <div class="contact-info">
-          <span class="section-tag">Contact</span>
+          <span class="section-tag">Contact & Réservations</span>
           <h2 class="section-title">Nous Contacter</h2>
           <div class="section-divider section-divider-left"><span></span></div>
           <div class="contact-details">
-            <div class="contact-item"><h4>Adresse</h4><p>Quartier de l'Hivernage, Marrakech, Maroc</p></div>
-            <div class="contact-item"><h4>Email</h4><p><a href="mailto:contact@hotelchhivra.com">contact@hotelchhivra.com</a></p></div>
-            <div class="contact-item"><h4>Téléphone</h4><p><a href="tel:+212524000000">+212 524 000 000</a></p></div>
-            <div class="contact-item"><h4>Accès</h4><p>10 min — Aéroport Ménara<br>5 min — Gare TGV</p></div>
+            <div class="contact-item">
+              <h4>Adresse</h4>
+              <p>Quartier de l'Hivernage<br>Marrakech, Maroc</p>
+            </div>
+            <div class="contact-item">
+              <h4>Email</h4>
+              <p><a href="mailto:contact@hotelchhivra.com">contact@hotelchhivra.com</a></p>
+            </div>
+            <div class="contact-item">
+              <h4>Téléphone</h4>
+              <p><a href="tel:+212524000000">+212 524 000 000</a></p>
+            </div>
+            <div class="contact-item">
+              <h4>Accès Stratégique</h4>
+              <p>✈ 10 min — Aéroport Marrakech-Ménara<br>🚄 5 min — Gare TGV</p>
+            </div>
           </div>
         </div>
         <form class="booking-form" id="booking-form">
           <h3 class="form-title">Réserver ou Demander un Devis</h3>
-          <div class="form-row"><div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" name="nom" required placeholder="Votre nom" /></div><div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="votre@email.com" /></div></div>
-          <div class="form-row"><div class="form-group"><label for="checkin">Arrivée</label><input type="date" id="checkin" name="checkin" required /></div><div class="form-group"><label for="checkout">Départ</label><input type="date" id="checkout" name="checkout" required /></div></div>
-          <div class="form-row"><div class="form-group"><label for="type-sejour">Type</label><select id="type-sejour" name="type-sejour"><option value="business">Business</option><option value="mice">MICE</option><option value="corporate">Corporate</option></select></div><div class="form-group"><label for="room-type">Chambre</label><select id="room-type" name="room-type"><option value="executive">Executive</option><option value="corporate">Corporate</option><option value="presidentielle">Présidentielle</option></select></div></div>
-          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="3" placeholder="Détails..."></textarea></div>
-          <button type="submit" class="btn-book-submit" id="btn-submit-booking">Envoyer</button>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" required placeholder="Votre nom" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="votre@email.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Arrivée</label>
+              <input type="date" id="checkin" name="checkin" required />
+            </div>
+            <div class="form-group">
+              <label for="checkout">Départ</label>
+              <input type="date" id="checkout" name="checkout" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="type-sejour">Type de séjour</label>
+              <select id="type-sejour" name="type-sejour">
+                <option value="business">Séjour Business</option>
+                <option value="mice">Événement MICE</option>
+                <option value="corporate">Devis Corporate</option>
+                <option value="groupe">Groupe</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="room-type">Hébergement</label>
+              <select id="room-type" name="room-type">
+                <option value="executive">Chambre Executive</option>
+                <option value="corporate">Suite Corporate</option>
+                <option value="presidentielle">Suite Présidentielle</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="3" placeholder="Détails de votre demande..."></textarea>
+          </div>
+          <button type="submit" class="btn-book-submit" id="btn-submit-booking">Envoyer la Demande</button>
         </form>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
   <footer class="footer">
-    <div class="footer-top"><div class="container"><div class="footer-grid">
-      <div class="footer-brand"><span class="footer-logo">Chhivra</span><p class="footer-tagline">Work & Reset · Marrakech</p><div class="footer-contact-info"><a href="tel:+212524000000">+212 524 000 000</a><a href="mailto:contact@hotelchhivra.com">contact@hotelchhivra.com</a></div></div>
-      <div class="footer-col"><h4>L'Hôtel</h4><ul><li><a href="#chambres">Chambres</a></li><li><a href="#gastronomie">Gastronomie</a></li><li><a href="#bienetre">Bien-être</a></li><li><a href="#mice">MICE</a></li></ul></div>
-      <div class="footer-col"><h4>Découvrir</h4><ul><li><a href="#vision">Notre Vision</a></li><li><a href="#">Marrakech</a></li><li><a href="#">Carrières</a></li></ul></div>
-      <div class="footer-col"><h4>Services</h4><ul><li><a href="#contact">Réservations</a></li><li><a href="#mice">Devis Corporate</a></li><li><a href="#bienetre">Spa</a></li></ul></div>
-    </div></div></div>
-    <div class="footer-bottom"><div class="container"><p>&copy; 2026 Hôtel Chhivra. Tous droits réservés.</p><div class="footer-bottom-links"><a href="#">Confidentialité</a><a href="#">Mentions Légales</a></div></div></div>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-logo">Chhivra</span>
+            <p class="footer-tagline">Work & Reset · Marrakech</p>
+            <div class="footer-contact-info">
+              <a href="tel:+212524000000">+212 524 000 000</a>
+              <a href="mailto:contact@hotelchhivra.com">contact@hotelchhivra.com</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>L'Hôtel</h4>
+            <ul>
+              <li><a href="#chambres">Chambres & Suites</a></li>
+              <li><a href="#gastronomie">Gastronomie</a></li>
+              <li><a href="#bienetre">Bien-être</a></li>
+              <li><a href="#mice">MICE & Événements</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Découvrir</h4>
+            <ul>
+              <li><a href="#vision">Notre Vision</a></li>
+              <li><a href="#">Marrakech</a></li>
+              <li><a href="#">Carrières</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#contact">Réservations</a></li>
+              <li><a href="#mice">Devis Corporate</a></li>
+              <li><a href="#bienetre">Spa & Fitness</a></li>
+              <li><a href="#gastronomie">Restaurant</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="#" class="social-link" aria-label="LinkedIn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Twitter">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 4s-1.2.5-2 .6A4 4 0 0 0 20.4 2a8 8 0 0 1-2.5 1 4 4 0 0 0-7 3.6A11 11 0 0 1 3 3s-4 9 5 13a12 12 0 0 1-7 2c9 5 20 0 20-11.5a4 4 0 0 0-.1-.9A7.7 7.7 0 0 0 22 4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Hôtel Chhivra. Tous droits réservés.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Politique de Confidentialité</a>
+          <a href="#">Mentions Légales</a>
+        </div>
+      </div>
+    </div>
   </footer>
+
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
