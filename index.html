@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chhivra · Luxury Palace Hotel · Marrakech, Morocco</title>
+  <title>Chhivra - Luxury Palace Hotel - Marrakech, Morocco</title>
   <meta name="description" content="Chhivra — Chaque nuit mérite l'excellence. Experience unparalleled elegance, world-class dining, and timeless Moroccan hospitality." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
+
   <!-- Preloader -->
   <div id="preloader" class="preloader">
     <div class="preloader-inner">
@@ -38,6 +39,239 @@
     </div>
   </header>
 
+  <!-- Fullscreen Nav Overlay -->
+  <nav id="nav-overlay" class="nav-overlay">
+    <div class="nav-overlay-inner">
+      <div class="nav-close-row">
+        <button id="nav-close" class="nav-close" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>Our Story</a></li>
+        <li><a href="#accommodations" class="nav-link" data-nav>Accommodations</a></li>
+        <li><a href="#dining" class="nav-link" data-nav>Restaurants</a></li>
+        <li><a href="#spa" class="nav-link" data-nav>Spa & Wellbeing</a></li>
+        <li><a href="#bars" class="nav-link" data-nav>Bars</a></li>
+        <li><a href="#experiences" class="nav-link" data-nav>Experiences</a></li>
+        <li><a href="#events" class="nav-link" data-nav>Events</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+      <div class="nav-footer">
+        <span>+212 524 000 000</span>
+        <span>info@chhivra.com</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline poster="/images/hero.png" id="hero-video">
+        <source src="/images/hero-video.mp4" type="video/mp4" />
+        <img src="/images/hero.png" alt="Chhivra Palace" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-ornament"></div>
+      <h1 class="hero-title">
+        <span class="hero-title-line hero-title-line-1">Welcome to</span>
+        <span class="hero-title-line hero-title-line-2">Chhivra</span>
+      </h1>
+      <p class="hero-subtitle">Chaque nuit mérite l'excellence</p>
+      <div class="hero-ornament hero-ornament-bottom"></div>
+      <a href="#about" class="hero-scroll" id="hero-scroll-btn">
+        <span>Discover</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-about">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Since 1923</span>
+        <h2 class="section-title">A Century of Excellence</h2>
+        <div class="section-divider"><span></span></div>
+      </div>
+      <div class="about-grid" data-animate>
+        <div class="about-text">
+          <p class="about-lead">True to its singular identity, Chhivra is constantly reinventing itself, fashioning a unique magic woven of elegance and exception.</p>
+          <p>From the moment you arrive, you will be captivated by the harmony of the surroundings, the opulence of the materials and the excellence of the craftsmanship revealed in each and every detail.</p>
+          <p>Wherever you look, you will be struck by a majestic beauty — the softness of velvet and leather, the contours of sculpted plaster and zellige tilework, the freshness of cool marble.</p>
+          <a href="#accommodations" class="btn-elegant" id="btn-discover-more">Discover More</a>
+        </div>
+        <div class="about-image">
+          <div class="about-image-frame">
+            <img src="/images/hero.png" alt="Palace gardens" loading="lazy" />
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="100">0</span>
+              <span class="stat-label">Years of History</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="209">0</span>
+              <span class="stat-label">Rooms & Suites</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="800">0</span>
+              <span class="stat-label">Dedicated Staff</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accommodations Section -->
+  <section id="accommodations" class="section section-dark section-accommodations">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Accommodations</span>
+        <h2 class="section-title">A Sensory Journey</h2>
+        <div class="section-divider"><span></span></div>
+        <p class="section-desc">Experience the refined elegance of our rooms and suites, each a masterpiece of Moroccan artistry and contemporary luxury.</p>
+      </div>
+      <div class="rooms-showcase" data-animate>
+        <div class="room-card" id="room-deluxe">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Deluxe Room" loading="lazy" />
+            <div class="room-card-overlay">
+              <span class="room-card-price">From 450 EUR / night</span>
+            </div>
+          </div>
+          <div class="room-card-info">
+            <h3>The Rooms</h3>
+            <p>Elegant retreats with garden or Atlas Mountain views, adorned with hand-crafted furnishings and zellige tilework.</p>
+          </div>
+        </div>
+        <div class="room-card" id="room-suite">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Luxury Suite" loading="lazy" />
+            <div class="room-card-overlay">
+              <span class="room-card-price">From 850 EUR / night</span>
+            </div>
+          </div>
+          <div class="room-card-info">
+            <h3>The Suites</h3>
+            <p>Spacious sanctuaries of luxury with private living areas, marble bathrooms, and panoramic views of the legendary gardens.</p>
+          </div>
+        </div>
+        <div class="room-card" id="room-riad">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1538914717106-9dfc1e5dccbc?auto=format&fit=crop&w=800&q=80" alt="The Riads" loading="lazy" />
+            <div class="room-card-overlay">
+              <span class="room-card-price">From 2500 EUR / night</span>
+            </div>
+          </div>
+          <div class="room-card-info">
+            <h3>The Riads</h3>
+            <p>Private palatial residences with personal butler service, private pools, and exclusive access to the finest palace amenities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="section section-dark section-booking">
+    <div class="container">
+      <div class="booking-layout" data-animate>
+        <div class="booking-text">
+          <span class="section-tag">Reservations</span>
+          <h2 class="section-title">Begin Your Journey</h2>
+          <div class="section-divider section-divider-left"><span></span></div>
+          <p>We look forward to welcoming you to Chhivra. Begin planning your legendary Marrakech experience.</p>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Arrival</label>
+              <input type="date" id="checkin" name="checkin" required />
+            </div>
+            <div class="form-group">
+              <label for="checkout">Departure</label>
+              <input type="date" id="checkout" name="checkout" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="room-type">Room Type</label>
+              <select id="room-type" name="room-type">
+                <option value="room">The Rooms</option>
+                <option value="suite">The Suites</option>
+                <option value="riad">The Riads</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="special-requests">Special Requests</label>
+            <textarea id="special-requests" name="special-requests" rows="3" placeholder="Tell us how we can make your stay exceptional..."></textarea>
+          </div>
+          <button type="submit" class="btn-book-submit" id="btn-submit-booking">Check Availability</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-logo">Chhivra</span>
+            <p class="footer-tagline">Chaque nuit mérite l'excellence</p>
+            <div class="footer-contact-info">
+              <a href="tel:+212524000000">+212 524 000 000</a>
+              <a href="mailto:info@chhivra.com">info@chhivra.com</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>The Hotel</h4>
+            <ul>
+              <li><a href="#accommodations">Accommodations</a></li>
+              <li><a href="#booking">Reservations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Discover</h4>
+            <ul>
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#hero">Home</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Book</h4>
+            <ul>
+              <li><a href="#booking">Accommodation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Chhivra. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Legal Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script type="module" src="/src/main.ts"></script>
 </body>
-</html>
+              </html>
